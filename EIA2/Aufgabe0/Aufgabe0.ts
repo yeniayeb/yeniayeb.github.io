@@ -1,12 +1,11 @@
-var i : string ="";
+        var a: string= prompt ('Hallo, wie geht es dir ?');
+
+            console.log ("Hallo " + a);
+
+    function writeHTML() : void {
         
-    function main() {
-        var i = prompt("Gib deinen Namen ein");
-        var node : any = document.getElementById("content");
-        node.innerHTML += "Hallo";
-        node.innerHTML += i;
-        node.innerHTML += ",  Liebe Grueße Ebru!";
-        console.log("Selam",i,", Willkommen bei EIA2!");
+        var node : any = document.getElementById("main");
+        node.innerHTML += ("Hallo " + a);
         }
-    
-    document.addEventListener('DOMContentLoaded',main);
+
+document.addEventListener('DOMContentLoaded', writeHTML);

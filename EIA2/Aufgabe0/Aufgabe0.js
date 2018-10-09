@@ -1,11 +1,8 @@
-var i = "";
-function main() {
-    var i = prompt("Gib deinen Namen ein");
-    var node = document.getElementById("content");
-    node.innerHTML += "Hallo";
-    node.innerHTML += i;
-    node.innerHTML += ",  Liebe Grueße Ebru!";
-    console.log("Selam", i, ", Willkommen bei EIA2!");
+var a = prompt('Hallo, wie geht es dir ?');
+console.log("Hallo " + a);
+function writeHTML() {
+    var node = document.getElementById("main");
+    node.innerHTML += ("Hallo " + a);
 }
-document.addEventListener('DOMContentLoaded', main);
+document.addEventListener('DOMContentLoaded', writeHTML);
 //# sourceMappingURL=Aufgabe0.js.map
