@@ -7,14 +7,17 @@ Datum: 09.10.2018
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
 
-        var a: string= prompt ('Hallo, wie heisst du?');
-
-            console.log ("Hallo " + a);
-
-    function writeHTML() : void {
+ 
         
-        var node : any = document.getElementById("main");
-        node.innerHTML += ("Hallo " + a);
+    function hallo() {
+        var i = prompt("Gib deinen Namen ein");
+        var node : HTMLElement = document.getElementById("content");
+        
+        node.innerHTML += "Hey";
+        node.innerHTML += i;
+        node.innerHTML += ",  Liebe Grueße von Ebru!";
+        console.log("Hey",i,", Willkommen bei EIA2!");
         }
+    
+    document.addEventListener('DOMContentLoaded',hallo);
 
-document.addEventListener('DOMContentLoaded', writeHTML);
