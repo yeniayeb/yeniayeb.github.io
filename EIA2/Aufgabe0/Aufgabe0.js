@@ -1,8 +1,11 @@
-var a = prompt('Hallo, wie geht es dir?');
-console.log("Hallo " + a);
-function writeHTML() {
-    var node = document.getElementById("main");
-    node.innerHTML += ("Hallo " + a);
+function hallo() {
+    var a;
+    var a = prompt("Wie ist dein Name?");
+    var node = document.getElementById("content");
+    node.innerHTML = "Hallo ";
+    node.innerHTML += a;
+    node.innerHTML += "! Wie geht es dir?";
+    console.log("Hallo", a, "!");
 }
-document.addEventListener('DOMContentLoaded', writeHTML);
+document.addEventListener('DOMContentLoaded', hallo);
 //# sourceMappingURL=Aufgabe0.js.map
