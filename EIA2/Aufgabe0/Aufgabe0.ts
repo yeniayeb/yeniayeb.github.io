@@ -1,17 +1,21 @@
-   
+/*
+Aufgabe: Aufgabe 0: Arbeitsfähigkeit
+Name: Ebru Yeniay
+Matrikel: 259405
+Datum: 09.10.2018
+    
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+*/
 
-
-
-function hallo() {
-        var a: string;
-        var a = prompt("Wie ist dein Name?");
-        var node: any = document.getElementById("content");
-
-        node.innerHTML = "Hallo ";
-        node.innerHTML += a;
-        node.innerHTML += "! Wie geht es dir?";
-        console.log("Hallo", a, "!" );
-    }
-
-    document.addEventListener('DOMContentLoaded', hallo);
-
+var i : string ="";
+        
+    function main() {
+        var i = prompt("Gib deinen Namen ein");
+        var node : any = document.getElementById("content");
+        node.innerHTML += "Gruezi";
+        node.innerHTML += i;
+        node.innerHTML += ",  Liebe Grueße von Hilal!";
+        console.log("Gruezi",i,", willkommen bei EIA2!");
+        }
+    
+    document.addEventListener('DOMContentLoaded',main);
