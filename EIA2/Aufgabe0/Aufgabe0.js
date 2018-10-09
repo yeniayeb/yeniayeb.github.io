@@ -6,18 +6,14 @@ Datum: 09.10.2018
     
 Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
 */
-
-
-
-
-function hallo() {
-    var a;
-    var a = prompt("Wie ist dein Name?");
+var i = "";
+function main() {
+    var i = prompt("Gib deinen Namen ein");
     var node = document.getElementById("content");
-    node.innerHTML = "Hallo ";
-    node.innerHTML += a;
-    node.innerHTML += "! Wie geht es dir?";
-    console.log("Hallo", a, "!");
+    node.innerHTML += "Hey";
+    node.innerHTML += i;
+    node.innerHTML += ",  Liebe Grueße von Ebru!";
+    console.log("Hey", i, ", Willkommen bei EIA2!");
 }
-document.addEventListener('DOMContentLoaded', hallo);
+document.addEventListener('DOMContentLoaded', main);
 //# sourceMappingURL=Aufgabe0.js.map
