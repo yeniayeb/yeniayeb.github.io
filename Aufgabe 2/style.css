@@ -1,0 +1,106 @@
+* { /* mit* spricht man alle elemente an*/
+	padding:0;
+	margin:0;
+	}
+	
+	body {
+		height: 100%;
+		background-color:#ffffff;
+		font-family:"Trebuchet MS", Arial, sans-serif; 
+		/*hier wird gesat bitte Trebuchet MS anwenden und wenn diese nicht da ist dann bitte Arial und das sans serif ist dafür da dass keine Serifen verwendet werden*/
+		color:#383838;
+		font-size:87.5%;  /* wir wollen keine absolute Schriftröße sondern eine Relative, die sich an den Bildischirm anpasst. und normalerweise wird für 16 px= 100% angegeben. Dementsprechend muss man bei 14 px runterrechnen, das wären 87.5%.*/
+	}
+	
+	#container {
+		width:100%;
+		height: 100%;
+		margin:0px auto 0px auto;
+	}
+	
+	header img {
+		position: relative; /* Die position des Bildes wird relativ gesetzt, um es frei positionieren zu können */
+		margin-left: -300px; /* hier wird die Hälfte der Breite des Logos zurückgeschoben */
+		left: 50%; /* das logo soll dynamisch mittig positioniert werden. Hierzu wird das logo um 50% von der linken seite verschoben und mit margin-left um die hälfte der breite des logos zurückverschoben. So bleibt das logo bei jeder Auflösung mittig */
+		
+	}
+	
+	nav {
+		text-align: center;
+	}
+	
+	nav ul {
+		list-style-type:none; 
+	}
+	
+	nav li {
+		display:inline-block;
+		padding: 15px;
+	}
+	
+	nav a {
+		color:#000000;
+		text-decoration:none; /*damit der link nicht unterstrichen ist und color damit der link weiß ist*/
+		text-transform:uppercase; /* damit alles groß geschrieben wird. nicht selber schreiben weil das für menschen mit behinderung dann nicht lesbar ist */
+		font-size:1em;
+		padding: 5px 50px 5px 50px;
+		display:inline-block;
+		border-top: 1px solid #ffffff;
+	}
+	 /* bei html ist standart schriftgröße 16 und bei der Realhomepage ist es 14. also muss man rechnen: 16/100= 14/87.5%. 14/100%=16/114,29%*/ 
+	
+	 nav a:hover , nav a:focus nav a.aktiv {
+		 color:#b0b0b0;
+		 border-top: 1px solid #000000;
+	 }
+	 
+	#inhalt {
+		 width:100%; 
+		 height: 100%;
+		 margin:20px auto 0px auto;
+		 text-align: center;
+	 }
+	 
+	 h1 {
+		 color: #000000;
+		 font-size:171.43%;
+		 margin-bottom:1em;
+		 font-weight:bold; /*damit wird die schrift nicht mehr fett gesetzt und wird wieder normal*/
+		 text-transform:uppercase; /* damit alles groß geschrieben wird. nicht selber schreiben weil das für menschen mit behinderung dann nicht lesbar ist */
+	 }
+	 
+	 h2 {
+		 font-size:1em;
+		 margin-top: 20px;
+	 }
+	 
+	 a {
+		 color: #777777;
+		 text-decoration: none;
+	 }
+	 
+	 a:hover, a:focus {
+		 color:#383838;
+	 }
+	 
+	 #paket_container {
+		 width: 300px;
+		 height: 60%;
+		 background-color: #e8e8e8;
+		 margin: 0px 15px 50px 15px;
+		 float: left;
+		 border: 1px solid #bcbcbc;
+		 padding-bottom: 10px;
+	 }
+	 
+	 p {
+		 padding-left:10%;
+		 padding-right:10%;
+		  
+	 }
+	 
+	 div id {
+		 float: middle;
+		 padding-left:20px;
+		 padding-right:20px;
+	 }
